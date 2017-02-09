@@ -20,7 +20,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.stream.annotation.Bindings;
 import org.springframework.cloud.stream.messaging.Processor;
 import org.springframework.cloud.stream.test.binder.MessageCollector;
@@ -39,7 +39,7 @@ import static org.springframework.cloud.stream.test.matcher.MessageQueueMatcher.
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = BridgeProcessorIntegrationTests.BridgeProcessorApplication.class)
+@SpringBootTest(classes = BridgeProcessorIntegrationTests.BridgeProcessorApplication.class)
 public class BridgeProcessorIntegrationTests {
 
 	@Autowired
