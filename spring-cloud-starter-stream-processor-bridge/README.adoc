@@ -3,9 +3,41 @@
 
 A Processor module that returns messages that is passed by connecting just the input and output channels.
 
+
+== Input
+
+=== Headers
+
+=== Payload
+
+Any
+
+== Output
+
+=== Headers
+
+=== Payload
+
+Any
+
+== Options
+
+
 //end::ref-doc[]
-== Building with Maven
+== Build
 
 ```
-$> mvn package
+$ ./mvnw clean install -PgenerateApps
+$ cd apps
+```
+You can find the corresponding binder based projects here.
+You can then cd into one one of the folders and build it:
+```
+$ ./mvnw clean package
+```
+
+== Examples
+
+```
+java -jar bridge-processor.jar
 ```
