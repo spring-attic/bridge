@@ -22,8 +22,6 @@ Any
 
 == Options
 
-
-//end::ref-doc[]
 == Build
 
 ```
@@ -41,3 +39,4 @@ $ ./mvnw clean package
 ```
 java -jar bridge-processor.jar
 ```
+//end::ref-doc[]
