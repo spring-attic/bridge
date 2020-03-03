@@ -1,0 +1,43 @@
+//tag::ref-doc[]
+= Bridge Processor
+
+A Processor module that returns messages that is passed by connecting just the input and output channels.
+
+
+== Input
+
+=== Headers
+
+=== Payload
+
+Any
+
+== Output
+
+=== Headers
+
+=== Payload
+
+Any
+
+== Options
+
+== Build
+
+```
+$ ./mvnw clean install -PgenerateApps
+$ cd apps
+```
+You can find the corresponding binder based projects here.
+You can then cd into one one of the folders and build it:
+```
+$ ./mvnw clean package
+```
+
+== Examples
+
+```
+java -jar bridge-processor.jar
+```
+//end::ref-doc[]
+null
